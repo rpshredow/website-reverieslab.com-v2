@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div>
                 <h1>Welcome to reveries.lab</h1>
-                <p>This is the laravel application from the "Laravel From Scratch" Youtube series</p>
+                <p>This is my website I made with the Laravel framework in PHP.</p>
             </div>
         </div>
     </div>
