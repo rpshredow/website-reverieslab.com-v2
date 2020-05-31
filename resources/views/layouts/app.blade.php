@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -29,9 +30,13 @@
         </main>
     </div>
 
-    <script src="/ckeditor/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace( 'editor' );
-    </script> 
+        ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error=>{
+            console.error(error);
+        });                                             
+    </script>
 </body>
 </html>
