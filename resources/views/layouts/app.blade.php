@@ -11,7 +11,7 @@
     <title>welcome to reveries lab</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -30,13 +30,9 @@
         </main>
     </div>
 
-    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
-    <script>
-        ClassicEditor
-        .create(document.querySelector('#editor'))
-        .catch(error=>{
-            console.error(error);
-        });                                             
+    <script src={{ asset('ckeditor/ckeditor.js')}}></script> 
+    <script> 
+        CKEDITOR.replace('article-ckeditor'); 
     </script>
 </body>
 </html>
