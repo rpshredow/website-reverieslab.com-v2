@@ -26,6 +26,22 @@ Route::get('/about', function () {
     //return view('welcome');
 //});
 
+Route::get('/research/thesis', function () {
+    return view('/research/thesis');
+});
+
+Route::get('/research/fpganeuralnet', function () {
+    return view('/research/fpganeuralnet');
+});
+
+Route::get('/projects/terrain', function () {
+    return view('/projects/terrain');
+});
+
+Route::get('/projects/picluster', function () {
+    return view('/projects/picluster');
+});
+
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/research', 'PagesController@research');

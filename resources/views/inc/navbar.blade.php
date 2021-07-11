@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="images/maze-westworld.jpg" width="50">
+            <img src="/images/maze-westworld.jpg" width="50">
         </a>
         <a class="navbar-brand" href="{{ url('/') }}">
             <!-- {{ config('app.name', 'reveries.lab') }} -->
@@ -14,11 +14,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        Projects<span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/projects/picluster">Raspberry Pi Cluster</a>
+                        <a class="dropdown-item" href="/projects/terrain">3D Terrain App</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/research">Research</a>
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        Research<span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/research/thesis">Masters Thesis</a>
+                        <a class="dropdown-item" href="/research/fpganeuralnet">FPGA Neural Net</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
